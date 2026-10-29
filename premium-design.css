@@ -28,4 +28,28 @@ body{background:#f4f2ed;color:#121c2d;letter-spacing:-.01em}
 #survey{position:relative;isolation:isolate;background:transparent;border:0}#survey:before{content:'';position:absolute;z-index:-1;inset:0 auto 0 50%;width:100vw;transform:translateX(-50%);background:radial-gradient(ellipse at 90% 0%,#31455d 0%,transparent 36%),#172238}#survey .section-label{color:var(--green)}#survey .section-label:before{background:var(--green)}#survey .survey-copy .eyebrow{color:var(--green)}#survey .survey-copy h2{color:#fff}#survey .survey-copy>p:not(.eyebrow){color:#ccd4df}#survey .results-board{border:1px solid #46536a;box-shadow:0 20px 55px #050b1630}#survey .results-title{background:#202e45}#survey .results-embed{background:#f8f6f0}#survey .result-foot{background:#efece3}#survey .form-placeholder{border-color:#59694b;background:#202e45;color:#fff}#survey .form-icon{color:var(--green)}#survey .form-placeholder b{color:#fff}#survey .form-placeholder p{color:#cbd4e1}#survey .form-placeholder code{background:#344159;color:#e7efcf}#survey .survey-copy>.button{background:var(--green);color:#172238}#survey .survey-copy>.button span{color:#172238}
 .sources{position:relative;isolation:isolate}.sources:before{content:'';position:absolute;z-index:-1;inset:0 auto 0 50%;width:100vw;transform:translateX(-50%);background:#f8f6f0}.sources .source-list li{position:relative;padding:17px 18px 17px 25px}.sources .source-list li:before{content:'↗';position:absolute;left:9px;top:17px;color:#b84b35;font:10px var(--mono)}.sources .source-list a{color:#344157}
 @media(max-width:760px){.intro:before{right:7vw;top:16%;transform:none;font-size:150px}.thesis,.thesis:nth-child(1){min-height:150px}.thesis:nth-child(1) p{font-size:13px}#timeline .section-head h2{font-size:43px}.map-section .map-view:after{top:10px;left:10px}.map-frame{padding-top:48px}#people .person{min-height:145px;padding-left:53px}.score-panel:after{right:20px;font-size:78px}}
+
+/* Real historical map scans remain legible and video cards open their chosen YouTube film. */
+.map-frame img{filter:none!important;mix-blend-mode:normal!important;object-fit:contain;background:#f8f7f2;padding:8px}
+.map-frame{background:#e6e2d8}
+.video-link{display:block;color:inherit;text-decoration:none;transition:transform .2s,box-shadow .2s}
+.video-link:hover{transform:translateY(-4px);box-shadow:0 15px 38px #17223820}
+.video-cover{isolation:isolate;position:relative;min-height:210px;display:flex;align-items:flex-end}
+.video-cover img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;opacity:.5;filter:grayscale(.3)}
+.video-cover:before{z-index:-1;background:linear-gradient(0deg,#111a2df2,transparent 82%),repeating-linear-gradient(0deg,transparent 0 5px,#ffffff0c 6px 7px)}
+.video-cover b{padding:25px 20px 30px;font-size:15px!important;line-height:1.35!important;letter-spacing:.04em}
+.video-cover>i{position:absolute;right:15px;bottom:15px;color:#d8ee79;font:8px var(--mono);font-style:normal;letter-spacing:.08em}
+.video-cta{display:inline-block;margin-top:12px;color:#9e3f2f;font:8px var(--mono);letter-spacing:.1em;text-transform:uppercase}
+.game-section .quiz{grid-template-columns:repeat(2,minmax(0,1fr))}
+.game-section .task-results{grid-template-columns:repeat(5,minmax(0,1fr))}
+.game-section .question{min-height:245px}
+.open-answers-board{margin:18px 0 28px;border:1px solid #cbd4c2;background:#f7f6f0}
+.open-answers{min-height:145px;padding:20px}
+.open-answers-empty{min-height:105px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:#667085}
+.open-answers-empty>span{display:grid;place-items:center;width:35px;height:35px;border-radius:50%;background:#e8eddc;color:#72864d;font-size:20px;margin-bottom:10px}
+.open-answers-empty b{font-size:13px;color:#172238}
+.open-answers-empty p{max-width:470px;font-size:10px;line-height:1.8;margin:7px 0 0}
+.open-answers iframe{display:block;width:100%;min-height:360px;border:0;background:#fff}
+@media(max-width:760px){.game-section .quiz{grid-template-columns:1fr}.game-section .task-results{grid-template-columns:repeat(2,minmax(0,1fr))}.video-cover{min-height:185px}}
+@media(max-width:440px){.video-cover{min-height:210px}}
 .survey-form-frame{width:100%;height:960px;background:#fff;border:1px solid #d9ded0;box-shadow:0 14px 45px #17223812;margin:20px 0 12px}.survey-form-frame iframe{display:block;width:100%;height:100%;border:0}.form-caption{font-size:9px!important;line-height:1.8!important;color:#6c755d!important}@media(max-width:760px){.survey-form-frame{height:1180px}}
